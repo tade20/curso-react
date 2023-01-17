@@ -1,0 +1,12 @@
+.card {
+  background-color: lightgray;
+  color: dimgrey;
+}
+
+.bg-ready {
+  background-color: yellowgreen;
+}
+
+.bg-waitting {
+  background-color: salmon;
+}
