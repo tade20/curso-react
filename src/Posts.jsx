@@ -1,3 +1,5 @@
+import { IoIosAddCircle } from "react-icons/io";
+
 export function Post(){
     return <button onClick={()=>{
         fetch('https://jsonplaceholder.typicode.com/posts')
@@ -5,6 +7,7 @@ export function Post(){
             .then(data => console.log(data))
             .catch(error => console.error(error))
     }}>
+        <IoIosAddCircle/>
         Traer datos
     </button>
 }
