@@ -8,7 +8,21 @@ import { TaskCard } from './Task';
 import { Post } from './Posts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-
+const users = [{
+    id: 1,
+    name: 'Tadeo',
+    profile: 'https://robohash.org/user 1'
+},
+{
+    id: 2,
+    name: 'Facundo',
+    profile: 'https://robohash.org/user 3'
+},
+{
+    id: 3,
+    name: 'Nicolas',
+    profile: 'https://robohash.org/user 2'
+}]
 root.render(<>
     {/*<UserCard
         name="Tadeo Machin"
@@ -30,6 +44,14 @@ root.render(<>
     <Button text="Hello World" />
     <Button text="Pay" />
     <Button text="Click Me" />
-    <TaskCard />*/}
-    <Post />
+    <TaskCard />
+    <Post />*/}
+    {users.map((user) => {
+        return (
+            <div key={user.id}>
+                <h1>{user.name}</h1>
+                <img src={user.profile} />
+            </div>
+        )
+    })}
 </>)
