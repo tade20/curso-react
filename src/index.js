@@ -5,6 +5,7 @@ import Product from './Product';
 import { UserCard } from './UserCard';
 import { Button } from './Button';
 import { TaskCard } from './Task';
+import { Post } from './Posts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -28,6 +29,7 @@ root.render(<>
     greet={function () { alert("hola mundo") }} />
     <Button text="Hello World" />
     <Button text="Pay" />
-    <Button text="Click Me" />*/}
-    <TaskCard />
+    <Button text="Click Me" />
+    <TaskCard />*/}
+    <Post />
 </>)
