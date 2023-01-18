@@ -6,7 +6,7 @@ import { UserCard } from './UserCard';
 import { Button } from './Button';
 import { TaskCard } from './Task';
 import { Post } from './Posts';
-
+import { Counter } from './Message';
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const users = [{
     id: 1,
@@ -45,7 +45,7 @@ root.render(<>
     <Button text="Pay" />
     <Button text="Click Me" />
     <TaskCard />
-    <Post />*/}
+    <Post />
     {users.map((user) => {
         return (
             <div key={user.id}>
@@ -53,5 +53,6 @@ root.render(<>
                 <img src={user.profile} />
             </div>
         )
-    })}
+    })}*/}
+    <Counter />
 </>)
